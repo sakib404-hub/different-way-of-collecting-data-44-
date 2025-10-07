@@ -8,6 +8,7 @@ import DataCollectione from './Component/DataColleactionUsingE/DataCollectione.j
 import Home2 from './Component/Home2/Home2.jsx';
 import ControlledDataCollection from './Component/ControlledDataCollection/ControlledDataCollection.jsx';
 import Uncontrolled from './Component/UnControlled/Uncontrolled.jsx';
+import LoginManagement from './Component/LoginManagement/LoginManagement.jsx';
 
 // creating the root 
 const router = createBrowserRouter([
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/dataCollectione',
-        Component: Uncontrolled
+        Component: LoginManagement
       }
     ]
   }
