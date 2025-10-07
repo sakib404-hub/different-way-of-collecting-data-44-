@@ -13,7 +13,7 @@ const LoginManagement = () => {
     return (
         <div>
             <LoginForms handleLoginForm={handleLoginForm}></LoginForms>
-            <LoginDetails></LoginDetails>
+            <LoginDetails logins={logins}></LoginDetails>
         </div>
     );
 };
