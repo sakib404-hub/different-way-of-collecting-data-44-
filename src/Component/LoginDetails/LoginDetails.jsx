@@ -2,17 +2,17 @@ import React from 'react';
 
 const LoginDetails = ({ logins }) => {
     return (
-        <div className='p-6 text-black'>
-            <h2 className='text-2xl font-semibold text-center mb-4 text-gray-800'>Login Details</h2>
+        <div className='p-6 text-black '>
+            <h2 className='text-2xl font-semibold text-center mb-4 text-white'>Login Details</h2>
 
             <div className='overflow-x-auto'>
-                <table className='min-w-full border border-gray-300 rounded-lg shadow-md'>
+                <table className='min-w-full border-gray-300 rounded-lg shadow-md'>
                     <thead className='bg-gray-700 text-white'>
                         <tr>
-                            <th className='px-6 py-3 text-left'>Serial No</th>
-                            <th className='px-6 py-3 text-left'>Username</th>
-                            <th className='px-6 py-3 text-left'>Email</th>
-                            <th className='px-6 py-3 text-left'>Password</th>
+                            <th className='px-6 py-3 text-center'>Serial No</th>
+                            <th className='px-6 py-3 text-center'>Username</th>
+                            <th className='px-6 py-3 text-center'>Password</th>
+                            <th className='px-6 py-3 text-center'>Email</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -32,10 +32,10 @@ const LoginDetails = ({ logins }) => {
                                     className={`hover:bg-gray-100 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'
                                         }`}
                                 >
-                                    <td className='px-6 py-2 border-t'>{index + 1}</td>
-                                    <td className='px-6 py-2 border-t'>{login.name}</td>
-                                    <td className='px-6 py-2 border-t'>{login.email}</td>
-                                    <td className='px-6 py-2 border-t'>{login.password}</td>
+                                    <td className='px-6 py-2 border-t text-center'>{index + 1}</td>
+                                    <td className='px-6 py-2 border-t text-center'>{login.name}</td>
+                                    <td className='px-6 py-2 border-t text-center'>{login.email}</td>
+                                    <td className='px-6 py-2 border-t text-center'>{login.password}</td>
                                 </tr>
                             ))
                         )}
