@@ -66,6 +66,7 @@ const LoginForms = ({ handleLoginForm }) => {
                         defaultValue={email}
                         onChange={setEmail}
                         placeholder='email'
+                        required
                         className='border px-4 py-2 rounded-2xl'
                     />
                 </div>
@@ -79,6 +80,7 @@ const LoginForms = ({ handleLoginForm }) => {
                         defaultValue={password}
                         onChange={setPasswod}
                         placeholder='password'
+                        required
                         className='border px-4 py-2 rounded-2xl'
                     />
                 </div>
